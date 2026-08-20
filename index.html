@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="dashboard"> <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">A</div> <span>Dashboard</span>
+            </div>
+            <nav class="menu">
+                <p class="menu-title">MENU</p> <a href="#" class="menu-item active"> <span>▦</span> Dashboard </a> <a
+                    href="#" class="menu-item"> <span>◫</span> Analytics </a> <a href="#" class="menu-item">
+                    <span>□</span> Products </a> <a href="#" class="menu-item"> <span>♙</span> Customers </a>
+                <p class="menu-title">OTHERS</p> <a href="#" class="menu-item"> <span>⚙</span> Settings </a> <a href="#"
+                    class="menu-item"> <span>?</span> Help Center </a>
+            </nav>
+            <div class="sidebar-bottom">
+                <div class="upgrade-card">
+                    <div class="upgrade-icon">✦</div>
+                    <h4>Upgrade your plan</h4>
+                    <p>Get more features and unlimited access.</p> <button>Upgrade Now</button>
+                </div> <a href="#" class="menu-item logout"> <span>↪</span> Logout </a>
+            </div>
+        </aside> <!-- MAIN CONTENT -->
+        <main class="main"> <!-- HEADER -->
+            <header class="header">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Welcome back, Almira 👋</p>
+                </div>
+                <div class="header-right">
+                    <div class="search"> <span>⌕</span> <input type="text" placeholder="Search..."> </div> <button
+                        class="notification">♢</button>
+                    <div class="profile">
+                        <div class="avatar">AR</div>
+                        <div class="profile-info"> <strong>Almira</strong> <span>Admin</span> </div> <span
+                            class="arrow">⌄</span>
+                    </div>
+                </div>
+            </header> <!-- STATISTICS -->
+            <section class="stats">
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <div class="stat-icon purple">◉</div> <span class="growth positive">+12.5%</span>
+                    </div>
+                    <p>Total Revenue</p>
+                    <h2>Rp 24.580.000</h2> <span class="description">Compared to last month</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <div class="stat-icon blue">♙</div> <span class="growth positive">+8.2%</span>
+                    </div>
+                    <p>Total Customers</p>
+                    <h2>1,284</h2> <span class="description">Compared to last month</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <div class="stat-icon pink">▣</div> <span class="growth positive">+18.4%</span>
+                    </div>
+                    <p>Total Orders</p>
+                    <h2>856</h2> <span class="description">Compared to last month</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <div class="stat-icon green">◈</div> <span class="growth negative">-2.4%</span>
+                    </div>
+                    <p>Conversion Rate</p>
+                    <h2>24.8%</h2> <span class="description">Compared to last month</span>
+                </div>
+            </section> <!-- CHART + ACTIVITIES -->
+            <section class="content-grid"> <!-- SALES CHART -->
+                <div class="card chart-card">
+                    <div class="card-header">
+                        <div>
+                            <h3>Sales Overview</h3>
+                            <p>Monthly sales performance</p>
+                        </div> <select>
+                            <option>Last 7 months</option>
+                            <option>Last 30 days</option>
+                            <option>This year</option>
+                        </select>
+                    </div>
+                    <div class="chart">
+                        <div class="y-axis"> <span>30K</span> <span>20K</span> <span>10K</span> <span>0</span> </div>
+                        <div class="chart-area">
+                            <div class="grid-line line-1"></div>
+                            <div class="grid-line line-2"></div>
+                            <div class="grid-line line-3"></div>
+                            <div class="grid-line line-4"></div>
+                            <div class="bars">
+                                <div class="bar-wrapper">
+                                    <div class="bar" style="height: 45%;"></div> <span>Jan</span>
+                                </div>
+                                <div class="bar-wrapper">
+                                    <div class="bar" style="height: 60%;"></div> <span>Feb</span>
+                                </div>
+                                <div class="bar-wrapper">
+                                    <div class="bar" style="height: 50%;"></div> <span>Mar</span>
+                                </div>
+                                <div class="bar-wrapper">
+                                    <div class="bar" style="height: 72%;"></div> <span>Apr</span>
+                                </div>
+                                <div class="bar-wrapper">
+                                    <div class="bar" style="height: 65%;"></div> <span>May</span>
+                                </div>
+                                <div class="bar-wrapper">
+                                    <div class="bar" style="height: 85%;"></div> <span>Jun</span>
+                                </div>
+                                <div class="bar-wrapper">
+                                    <div class="bar active-bar" style="height: 95%;"></div> <span>Jul</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- RECENT ACTIVITY -->
+                <div class="card activity-card">
+                    <div class="card-header">
+                        <div>
+                            <h3>Recent Activity</h3>
+                            <p>Latest transactions</p>
+                        </div> <a href="#">View All</a>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-item">
+                            <div class="activity-icon purple">+</div>
+                            <div class="activity-info"> <strong>New Order</strong> <span>Order #ORD-1024</span> </div>
+                            <div class="activity-price"> <strong>+Rp 850K</strong> <span>2 min ago</span> </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon blue">♙</div>
+                            <div class="activity-info"> <strong>New Customer</strong> <span>Sarah Wijaya</span> </div>
+                            <div class="activity-price"> <strong>Customer</strong> <span>15 min ago</span> </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon pink">✓</div>
+                            <div class="activity-info"> <strong>Payment Received</strong> <span>Order #ORD-1021</span>
+                            </div>
+                            <div class="activity-price"> <strong>+Rp 1.2M</strong> <span>1 hour ago</span> </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon orange">!</div>
+                            <div class="activity-info"> <strong>Low Stock</strong> <span>Wireless Headphone</span>
+                            </div>
+                            <div class="activity-price"> <strong>12 left</strong> <span>2 hours ago</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- TABLE -->
+            <section class="card table-card">
+                <div class="card-header">
+                    <div>
+                        <h3>Recent Orders</h3>
+                        <p>Manage your latest orders</p>
+                    </div> <button class="primary-button"> + Add Order </button>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Product</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#ORD-1024</td>
+                                <td>
+                                    <div class="customer">
+                                        <div class="customer-avatar">SW</div> Sarah Wijaya
+                                    </div>
+                                </td>
+                                <td>Wireless Headphone</td>
+                                <td>20 Aug 2026</td>
+                                <td>Rp 850.000</td>
+                                <td> <span class="status completed"> Completed </span> </td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-1023</td>
+                                <td>
+                                    <div class="customer">
+                                        <div class="customer-avatar">RP</div> Rizky Putra
+                                    </div>
+                                </td>
+                                <td>Mechanical Keyboard</td>
+                                <td>20 Aug 2026</td>
+                                <td>Rp 1.250.000</td>
+                                <td> <span class="status pending"> Pending </span> </td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-1022</td>
+                                <td>
+                                    <div class="customer">
+                                        <div class="customer-avatar">AN</div> Andi Nugraha
+                                    </div>
+                                </td>
+                                <td>Gaming Mouse</td>
+                                <td>19 Aug 2026</td>
+                                <td>Rp 650.000</td>
+                                <td> <span class="status completed"> Completed </span> </td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-1021</td>
+                                <td>
+                                    <div class="customer">
+                                        <div class="customer-avatar">DN</div> Dinda Nur
+                                    </div>
+                                </td>
+                                <td>USB-C Hub</td>
+                                <td>19 Aug 2026</td>
+                                <td>Rp 420.000</td>
+                                <td> <span class="status cancelled"> Cancelled </span> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
